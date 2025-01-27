@@ -1,0 +1,823 @@
+{
+  "ingredients": [
+    {
+      "name": "Chicken",
+      "slug": "chicken",
+      "alternateNames": ["Poultry", "Whole Chicken"],
+      "image": "https://example.com/images/chicken.jpg",
+      "category": "meat",
+      "isGeneric": true,
+      "defaultUnit": "kg",
+      "validUnits": ["g", "kg", "piece"],
+      "nutritionPer100g": {
+        "calories": 239,
+        "protein": 27,
+        "carbohydrates": 0,
+        "fat": 14
+      },
+      "storage": "Keep refrigerated at 0-4°C. Use within 2-3 days or freeze.",
+      "seasonality": []
+    },
+    {
+      "name": "Chicken Breast",
+      "slug": "chicken-breast",
+      "alternateNames": ["Chicken Fillet", "Chicken Cutlet"],
+      "image": "https://example.com/images/chicken-breast.jpg",
+      "category": "meat",
+      "parentIngredient": "Chicken",
+      "isGeneric": false,
+      "specificType": "poultry",
+      "defaultUnit": "g",
+      "validUnits": ["g", "kg", "piece"],
+      "nutritionPer100g": {
+        "calories": 165,
+        "protein": 31,
+        "carbohydrates": 0,
+        "fat": 3.6
+      },
+      "storage": "Keep refrigerated at 0-4°C. Use within 2 days or freeze.",
+      "seasonality": []
+    },
+    {
+      "name": "Chicken Thigh",
+      "slug": "chicken-thigh",
+      "alternateNames": ["Thigh", "Chicken Legs"],
+      "image": "https://example.com/images/chicken-thigh.jpg",
+      "category": "meat",
+      "parentIngredient": "Chicken",
+      "isGeneric": false,
+      "specificType": "poultry",
+      "defaultUnit": "g",
+      "validUnits": ["g", "kg", "piece"],
+      "nutritionPer100g": {
+        "calories": 209,
+        "protein": 26,
+        "carbohydrates": 0,
+        "fat": 12
+      },
+      "storage": "Keep refrigerated at 0-4°C. Use within 2 days or freeze.",
+      "seasonality": []
+    },
+    {
+      "name": "Chicken Wings",
+      "slug": "chicken-wings",
+      "alternateNames": ["Wings"],
+      "image": "https://example.com/images/chicken-wings.jpg",
+      "category": "meat",
+      "parentIngredient": "Chicken",
+      "isGeneric": false,
+      "specificType": "poultry",
+      "defaultUnit": "g",
+      "validUnits": ["g", "kg", "piece"],
+      "nutritionPer100g": {
+        "calories": 266,
+        "protein": 27,
+        "carbohydrates": 0,
+        "fat": 17
+      },
+      "storage": "Keep refrigerated at 0-4°C. Use within 2 days or freeze.",
+      "seasonality": []
+    },
+    {
+      "name": "Plant Protein",
+      "slug": "plant-protein",
+      "alternateNames": ["Plant-Based Protein", "Vegetarian Protein"],
+      "image": "https://example.com/images/plant-protein.jpg",
+      "category": "other",
+      "isGeneric": true,
+      "defaultUnit": "g",
+      "validUnits": ["g", "kg"],
+      "storage": "Varies by type",
+      "seasonality": []
+    },
+    {
+      "name": "Tofu",
+      "slug": "tofu",
+      "alternateNames": ["Bean Curd", "Soybean Curd"],
+      "image": "https://example.com/images/tofu.jpg",
+      "category": "other",
+      "parentIngredient": "Plant Protein",
+      "isGeneric": false,
+      "defaultUnit": "g",
+      "validUnits": ["g", "kg", "block"],
+      "nutritionPer100g": {
+        "calories": 76,
+        "protein": 8,
+        "carbohydrates": 2,
+        "fat": 4
+      },
+      "storage": "Keep refrigerated. Use within 3-5 days of opening.",
+      "seasonality": []
+    },
+    {
+      "name": "Tempeh",
+      "slug": "tempeh",
+      "alternateNames": ["Fermented Soybean Cake"],
+      "image": "https://example.com/images/tempeh.jpg",
+      "category": "other",
+      "parentIngredient": "Plant Protein",
+      "isGeneric": false,
+      "defaultUnit": "g",
+      "validUnits": ["g", "kg", "block"],
+      "nutritionPer100g": {
+        "calories": 192,
+        "protein": 20,
+        "carbohydrates": 8,
+        "fat": 11
+      },
+      "storage": "Keep refrigerated. Use within 7 days of opening.",
+      "seasonality": []
+    },
+    {
+      "name": "Seitan",
+      "slug": "seitan",
+      "alternateNames": ["Wheat Meat", "Vital Wheat Gluten"],
+      "image": "https://example.com/images/seitan.jpg",
+      "category": "other",
+      "parentIngredient": "Plant Protein",
+      "isGeneric": false,
+      "defaultUnit": "g",
+      "validUnits": ["g", "kg"],
+      "nutritionPer100g": {
+        "calories": 370,
+        "protein": 75,
+        "carbohydrates": 14,
+        "fat": 2
+      },
+      "storage": "Keep refrigerated. Use within 5 days of opening.",
+      "seasonality": []
+    },
+    {
+      "name": "Flatbread",
+      "slug": "flatbread",
+      "alternateNames": ["Flat Bread"],
+      "image": "https://example.com/images/flatbread.jpg",
+      "category": "grains",
+      "isGeneric": true,
+      "defaultUnit": "piece",
+      "validUnits": ["piece", "g"],
+      "nutritionPer100g": {
+        "calories": 280,
+        "protein": 9,
+        "carbohydrates": 55,
+        "fat": 1.5
+      },
+      "storage": "Store in a cool, dry place. Once opened, seal tightly.",
+      "seasonality": []
+    },
+    {
+      "name": "Tortilla",
+      "slug": "tortilla",
+      "alternateNames": ["Mexican Flatbread"],
+      "image": "https://lumeappfiles.blob.core.windows.net/recipeimages/ingredients/tortilla.jpg",
+      "category": "grains",
+      "parentIngredient": "Flatbread",
+      "isGeneric": false,
+      "defaultUnit": "piece",
+      "validUnits": ["piece", "g"],
+      "nutritionPer100g": {
+        "calories": 297,
+        "protein": 7,
+        "carbohydrates": 50,
+        "fat": 7
+      },
+      "storage": "Store in a cool, dry place. Once opened, seal tightly.",
+      "seasonality": []
+    },
+    {
+      "name": "Pita Bread",
+      "slug": "pita-bread",
+      "alternateNames": ["Pita", "Pocket Bread"],
+      "image": "https://example.com/images/pita-bread.jpg",
+      "category": "grains",
+      "parentIngredient": "Flatbread",
+      "isGeneric": false,
+      "defaultUnit": "piece",
+      "validUnits": ["piece", "g"],
+      "nutritionPer100g": {
+        "calories": 275,
+        "protein": 9,
+        "carbohydrates": 55,
+        "fat": 1.5
+      },
+      "storage": "Store in a cool, dry place. Freeze for longer storage.",
+      "seasonality": []
+    },
+    {
+      "name": "Breadcrumbs",
+      "slug": "breadcrumbs",
+      "alternateNames": ["Bread Crumbs"],
+      "image": "https://lumeappfiles.blob.core.windows.net/recipeimages/ingredients/breadcrumbs.jpg",
+      "category": "grains",
+      "isGeneric": true,
+      "defaultUnit": "g",
+      "validUnits": ["g", "cup", "tbsp"],
+      "nutritionPer100g": {
+        "calories": 395,
+        "protein": 13,
+        "carbohydrates": 72,
+        "fat": 5
+      },
+      "storage": "Store in an airtight container in a cool, dry place.",
+      "seasonality": []
+    },
+    {
+      "name": "Panko",
+      "slug": "panko",
+      "alternateNames": ["Japanese Breadcrumbs", "Panko Breadcrumbs"],
+      "image": "https://lumeappfiles.blob.core.windows.net/recipeimages/ingredients/panko-breadcrumbs.jpg",
+      "category": "grains",
+      "parentIngredient": "Breadcrumbs",
+      "isGeneric": false,
+      "defaultUnit": "g",
+      "validUnits": ["g", "cup", "tbsp"],
+      "nutritionPer100g": {
+        "calories": 375,
+        "protein": 12,
+        "carbohydrates": 73,
+        "fat": 1.5
+      },
+      "storage": "Store in an airtight container in a cool, dry place.",
+      "seasonality": []
+    },
+    {
+      "name": "Seasoned Breadcrumbs",
+      "slug": "seasoned-breadcrumbs",
+      "alternateNames": ["Italian Breadcrumbs", "Flavored Breadcrumbs"],
+      "image": "https://example.com/images/seasoned-breadcrumbs.jpg",
+      "category": "grains",
+      "parentIngredient": "Breadcrumbs",
+      "isGeneric": false,
+      "defaultUnit": "g",
+      "validUnits": ["g", "cup", "tbsp"],
+      "nutritionPer100g": {
+        "calories": 385,
+        "protein": 12,
+        "carbohydrates": 71,
+        "fat": 5
+      },
+      "storage": "Store in an airtight container in a cool, dry place.",
+      "seasonality": []
+    },
+    {
+      "name": "Lettuce",
+      "slug": "lettuce",
+      "alternateNames": ["Green Lettuce"],
+      "image": "https://example.com/images/lettuce.jpg",
+      "category": "vegetables",
+      "isGeneric": true,
+      "defaultUnit": "g",
+      "validUnits": ["g", "kg", "head"],
+      "nutritionPer100g": {
+        "calories": 15,
+        "protein": 1,
+        "carbohydrates": 2,
+        "fat": 0.2,
+        "fiber": 1.2
+      },
+      "storage": "Keep refrigerated in the crisper drawer. Best used within 1 week.",
+      "seasonality": ["Spring", "Summer", "Fall"]
+    },
+    {
+      "name": "Iceberg Lettuce",
+      "slug": "iceberg-lettuce",
+      "alternateNames": ["Crisphead Lettuce"],
+      "image": "https://example.com/images/iceberg-lettuce.jpg",
+      "category": "vegetables",
+      "parentIngredient": "Lettuce",
+      "isGeneric": false,
+      "defaultUnit": "g",
+      "validUnits": ["g", "kg", "head"],
+      "nutritionPer100g": {
+        "calories": 14,
+        "protein": 0.9,
+        "carbohydrates": 2.2,
+        "fat": 0.1,
+        "fiber": 1.2
+      },
+      "storage": "Keep refrigerated in the crisper drawer. Best used within 1 week.",
+      "seasonality": ["Spring", "Summer", "Fall"]
+    },
+    {
+      "name": "Romaine Lettuce",
+      "slug": "romaine-lettuce",
+      "alternateNames": ["Cos Lettuce"],
+      "image": "https://example.com/images/romaine-lettuce.jpg",
+      "category": "vegetables",
+      "parentIngredient": "Lettuce",
+      "isGeneric": false,
+      "defaultUnit": "g",
+      "validUnits": ["g", "kg", "head"],
+      "nutritionPer100g": {
+        "calories": 17,
+        "protein": 1.2,
+        "carbohydrates": 3.3,
+        "fat": 0.3,
+        "fiber": 2.1
+      },
+      "storage": "Keep refrigerated in the crisper drawer. Best used within 1 week.",
+      "seasonality": ["Spring", "Summer", "Fall"]
+    },
+    {
+      "name": "Butter Lettuce",
+      "slug": "butter-lettuce",
+      "alternateNames": ["Boston Lettuce", "Bibb Lettuce"],
+      "image": "https://lumeappfiles.blob.core.windows.net/recipeimages/ingredients/butter-lettuce.jpg",
+      "category": "vegetables",
+      "parentIngredient": "Lettuce",
+      "isGeneric": false,
+      "defaultUnit": "g",
+      "validUnits": ["g", "kg", "head"],
+      "nutritionPer100g": {
+        "calories": 13,
+        "protein": 1.3,
+        "carbohydrates": 2.2,
+        "fat": 0.2,
+        "fiber": 1.1
+      },
+      "storage": "Keep refrigerated in the crisper drawer. Best used within 1 week.",
+      "seasonality": ["Spring", "Summer", "Fall"]
+    },
+    {
+      "name": "Tomato",
+      "slug": "tomato",
+      "alternateNames": ["Fresh Tomato"],
+      "image": "https://example.com/images/tomato.jpg",
+      "category": "vegetables",
+      "isGeneric": true,
+      "defaultUnit": "unit",
+      "validUnits": ["unit", "g", "kg"],
+      "nutritionPer100g": {
+        "calories": 18,
+        "protein": 0.9,
+        "carbohydrates": 3.9,
+        "fat": 0.2,
+        "fiber": 1.2
+      },
+      "storage": "Store at room temperature away from direct sunlight. Refrigerate when ripe.",
+      "seasonality": ["Summer", "Fall"]
+    },
+    {
+      "name": "Cherry Tomato",
+      "slug": "cherry-tomato",
+      "alternateNames": ["Baby Tomatoes", "Grape Tomatoes"],
+      "image": "https://example.com/images/cherry-tomato.jpg",
+      "category": "vegetables",
+      "parentIngredient": "Tomato",
+      "isGeneric": false,
+      "defaultUnit": "g",
+      "validUnits": ["g", "unit", "punnet"],
+      "nutritionPer100g": {
+        "calories": 18,
+        "protein": 0.9,
+        "carbohydrates": 3.9,
+        "fat": 0.2,
+        "fiber": 1.2
+      },
+      "storage": "Store at room temperature. Refrigerate when ripe.",
+      "seasonality": ["Summer", "Fall"]
+    },
+    {
+      "name": "Roma Tomato",
+      "slug": "roma-tomato",
+      "alternateNames": ["Plum Tomato", "Italian Tomato"],
+      "image": "https://example.com/images/roma-tomato.jpg",
+      "category": "vegetables",
+      "parentIngredient": "Tomato",
+      "isGeneric": false,
+      "defaultUnit": "unit",
+      "validUnits": ["unit", "g", "kg"],
+      "nutritionPer100g": {
+        "calories": 20,
+        "protein": 1.0,
+        "carbohydrates": 4.0,
+        "fat": 0.2,
+        "fiber": 1.4
+      },
+      "storage": "Store at room temperature. Refrigerate when ripe.",
+      "seasonality": ["Summer", "Fall"]
+    },
+    {
+      "name": "Cooking Oil",
+      "slug": "cooking-oil",
+      "alternateNames": ["Oil"],
+      "image": "https://example.com/images/cooking-oil.jpg",
+      "category": "condiments",
+      "isGeneric": true,
+      "defaultUnit": "tbsp",
+      "validUnits": ["tbsp", "ml", "cup"],
+      "nutritionPer100g": {
+        "calories": 884,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 100
+      },
+      "storage": "Store in a cool, dark place. Keep tightly sealed.",
+      "seasonality": []
+    },
+    {
+      "name": "Vegetable Oil",
+      "slug": "vegetable-oil",
+      "alternateNames": ["Frying Oil"],
+      "image": "https://example.com/images/vegetable-oil.jpg",
+      "category": "condiments",
+      "parentIngredient": "Cooking Oil",
+      "isGeneric": false,
+      "defaultUnit": "tbsp",
+      "validUnits": ["tbsp", "ml", "cup"],
+      "nutritionPer100g": {
+        "calories": 884,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 100
+      },
+      "storage": "Store in a cool, dark place. Keep tightly sealed.",
+      "seasonality": []
+    },
+    {
+      "name": "Olive Oil",
+      "slug": "olive-oil",
+      "alternateNames": ["EVOO", "Extra Virgin Olive Oil"],
+      "image": "https://example.com/images/olive-oil.jpg",
+      "category": "condiments",
+      "parentIngredient": "Cooking Oil",
+      "isGeneric": false,
+      "defaultUnit": "tbsp",
+      "validUnits": ["tbsp", "ml", "cup"],
+      "nutritionPer100g": {
+        "calories": 884,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 100
+      },
+      "storage": "Store in a cool, dark place. Keep tightly sealed.",
+      "seasonality": []
+    },
+    {
+      "name": "Canola Oil",
+      "slug": "canola-oil",
+      "alternateNames": ["Rapeseed Oil"],
+      "image": "https://example.com/images/canola-oil.jpg",
+      "category": "condiments",
+      "parentIngredient": "Cooking Oil",
+      "isGeneric": false,
+      "defaultUnit": "tbsp",
+      "validUnits": ["tbsp", "ml", "cup"],
+      "nutritionPer100g": {
+        "calories": 884,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 100
+      },
+      "storage": "Store in a cool, dark place. Keep tightly sealed.",
+      "seasonality": []
+    },
+    {
+      "name": "Garlic",
+      "slug": "garlic",
+      "alternateNames": ["Fresh Garlic"],
+      "image": "https://example.com/images/garlic.jpg",
+      "category": "spices",
+      "isGeneric": true,
+      "defaultUnit": "clove",
+      "validUnits": ["clove", "g", "head"],
+      "nutritionPer100g": {
+        "calories": 149,
+        "protein": 6.4,
+        "carbohydrates": 33,
+        "fat": 0.5
+      },
+      "storage": "Store in a cool, dry place with good air circulation.",
+      "seasonality": ["Summer", "Fall"]
+    },
+    {
+      "name": "Garlic Powder",
+      "slug": "garlic-powder",
+      "alternateNames": ["Powdered Garlic", "Dried Garlic"],
+      "image": "https://example.com/images/garlic-powder.jpg",
+      "category": "spices",
+      "parentIngredient": "Garlic",
+      "isGeneric": false,
+      "defaultUnit": "tsp",
+      "validUnits": ["tsp", "tbsp", "g"],
+      "nutritionPer100g": {
+        "calories": 331,
+        "protein": 16.8,
+        "carbohydrates": 72.7,
+        "fat": 0.7
+      },
+      "storage": "Store in an airtight container in a cool, dark place.",
+      "seasonality": []
+    },
+    {
+      "name": "Granulated Garlic",
+      "slug": "granulated-garlic",
+      "alternateNames": ["Garlic Granules"],
+      "image": "https://example.com/images/granulated-garlic.jpg",
+      "category": "spices",
+      "parentIngredient": "Garlic",
+      "isGeneric": false,
+      "defaultUnit": "tsp",
+      "validUnits": ["tsp", "tbsp", "g"],
+      "nutritionPer100g": {
+        "calories": 331,
+        "protein": 16.8,
+        "carbohydrates": 72.7,
+        "fat": 0.7
+      },
+      "storage": "Store in an airtight container in a cool, dark place.",
+      "seasonality": []
+    },
+    {
+      "name": "Pepper",
+      "slug": "pepper",
+      "alternateNames": ["Peppercorns"],
+      "image": "https://example.com/images/pepper.jpg",
+      "category": "spices",
+      "isGeneric": true,
+      "defaultUnit": "tsp",
+      "validUnits": ["tsp", "tbsp", "g"],
+      "storage": "Store in an airtight container in a cool, dark place.",
+      "seasonality": []
+    },
+    {
+      "name": "Black Pepper",
+      "slug": "black-pepper",
+      "alternateNames": ["Ground Black Pepper"],
+      "image": "https://example.com/images/black-pepper.jpg",
+      "category": "spices",
+      "parentIngredient": "Pepper",
+      "isGeneric": false,
+      "defaultUnit": "tsp",
+      "validUnits": ["tsp", "tbsp", "g"],
+      "nutritionPer100g": {
+        "calories": 251,
+        "protein": 10.4,
+        "carbohydrates": 63.9,
+        "fat": 3.3
+      },
+      "storage": "Store in an airtight container in a cool, dark place.",
+      "seasonality": []
+    },
+    {
+      "name": "White Pepper",
+      "slug": "white-pepper",
+      "alternateNames": ["Ground White Pepper"],
+      "image": "https://example.com/images/white-pepper.jpg",
+      "category": "spices",
+      "parentIngredient": "Pepper",
+      "isGeneric": false,
+      "defaultUnit": "tsp",
+      "validUnits": ["tsp", "tbsp", "g"],
+      "nutritionPer100g": {
+        "calories": 296,
+        "protein": 10.4,
+        "carbohydrates": 68.3,
+        "fat": 2.1
+      },
+      "storage": "Store in an airtight container in a cool, dark place.",
+      "seasonality": []
+    },
+    {
+      "name": "Salt",
+      "slug": "salt",
+      "alternateNames": ["Cooking Salt"],
+      "image": "https://example.com/images/salt.jpg",
+      "category": "spices",
+      "isGeneric": true,
+      "defaultUnit": "tsp",
+      "validUnits": ["tsp", "tbsp", "g"],
+      "nutritionPer100g": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "sodium": 38758
+      },
+      "storage": "Store in an airtight container in a cool, dry place.",
+      "seasonality": []
+    },
+    {
+      "name": "Table Salt",
+      "slug": "table-salt",
+      "alternateNames": ["Fine Salt", "Iodized Salt"],
+      "image": "https://example.com/images/table-salt.jpg",
+      "category": "spices",
+      "parentIngredient": "Salt",
+      "isGeneric": false,
+      "defaultUnit": "tsp",
+      "validUnits": ["tsp", "tbsp", "g"],
+      "nutritionPer100g": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "sodium": 38758
+      },
+      "storage": "Store in an airtight container in a cool, dry place.",
+      "seasonality": []
+    },
+    {
+      "name": "Sea Salt",
+      "slug": "sea-salt",
+      "alternateNames": ["Marine Salt"],
+      "image": "https://example.com/images/sea-salt.jpg",
+      "category": "spices",
+      "parentIngredient": "Salt",
+      "isGeneric": false,
+      "defaultUnit": "tsp",
+      "validUnits": ["tsp", "tbsp", "g"],
+      "nutritionPer100g": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "sodium": 38758
+      },
+      "storage": "Store in an airtight container in a cool, dry place.",
+      "seasonality": []
+    },
+    {
+      "name": "Creamy Condiment",
+      "slug": "creamy-condiment",
+      "alternateNames": ["Creamy Sauce"],
+      "image": "https://example.com/images/creamy-condiment.jpg",
+      "category": "condiments",
+      "isGeneric": true, 
+      "defaultUnit": "tbsp",
+      "validUnits": ["tbsp", "g", "ml"],
+      "storage": "Varies by type. Generally refrigerate after opening.",
+      "seasonality": []
+    },
+    {
+      "name": "Mayonnaise",
+      "slug": "mayonnaise",
+      "alternateNames": ["Mayo"],
+      "image": "https://example.com/images/mayonnaise.jpg",
+      "category": "condiments",
+      "isGeneric": true,  
+      "parentIngredient": "Creamy Condiment",
+      "defaultUnit": "tbsp",
+      "validUnits": ["tbsp", "g", "ml"],
+      "nutritionPer100g": {
+        "calories": 680,
+        "protein": 1,
+        "carbohydrates": 0.6,
+        "fat": 75
+      },
+      "storage": "Store in refrigerator after opening. Use within 2-3 months.",
+      "seasonality": []
+    },
+    {
+      "name": "Light Mayonnaise",
+      "slug": "light-mayonnaise",
+      "alternateNames": ["Light Mayo", "Low-fat Mayo"],
+      "image": "https://example.com/images/light-mayonnaise.jpg",
+      "category": "condiments",
+      "isGeneric": false,  
+      "parentIngredient": "Mayonnaise", 
+      "defaultUnit": "tbsp",
+      "validUnits": ["tbsp", "g", "ml"],
+      "nutritionPer100g": {
+        "calories": 280,
+        "protein": 0.5,
+        "carbohydrates": 7,
+        "fat": 25
+      },
+      "storage": "Store in refrigerator after opening. Use within 2-3 months.",
+      "seasonality": []
+    },
+    {
+      "name": "Greek Yogurt",
+      "slug": "greek-yogurt",
+      "alternateNames": ["Strained Yogurt"],
+      "image": "https://example.com/images/greek-yogurt.jpg",
+      "category": "dairy",
+      "parentIngredient": "Creamy Condiment",
+      "isGeneric": false,
+      "defaultUnit": "tbsp",
+      "validUnits": ["tbsp", "g", "cup"],
+      "nutritionPer100g": {
+        "calories": 97,
+        "protein": 9,
+        "carbohydrates": 3.6,
+        "fat": 5
+      },
+      "storage": "Keep refrigerated. Use within 1 week of opening.",
+      "seasonality": []
+    },
+    {
+      "name": "Sour Cream",
+      "slug": "sour-cream",
+      "alternateNames": ["Cultured Cream"],
+      "image": "https://example.com/images/sour-cream.jpg",
+      "category": "dairy",
+      "parentIngredient": "Creamy Condiment",
+      "isGeneric": false,
+      "defaultUnit": "tbsp",
+      "validUnits": ["tbsp", "g", "cup"],
+      "nutritionPer100g": {
+        "calories": 198,
+        "protein": 2.1,
+        "carbohydrates": 4.6,
+        "fat": 19.4
+      },
+      "storage": "Keep refrigerated. Use within 1-2 weeks of opening.",
+      "seasonality": []
+    },
+    {
+      "name": "Egg",
+      "slug": "egg",
+      "alternateNames": ["Eggs", "Whole Egg"],
+      "image": "https://example.com/images/egg.jpg",
+      "category": "dairy",
+      "isGeneric": true,
+      "defaultUnit": "unit",
+      "validUnits": ["unit", "g"],
+      "nutritionPer100g": {
+        "calories": 155,
+        "protein": 13,
+        "carbohydrates": 1.1,
+        "fat": 11
+      },
+      "storage": "Keep refrigerated. Use within 3-5 weeks.",
+      "seasonality": []
+    },
+    {
+      "name": "Egg White",
+      "slug": "egg-white",
+      "alternateNames": ["Egg Whites"],
+      "image": "https://example.com/images/egg-white.jpg",
+      "category": "dairy",
+      "parentIngredient": "Egg",
+      "isGeneric": false,
+      "defaultUnit": "g",
+      "validUnits": ["g", "unit"], 
+      "nutritionPer100g": {
+        "calories": 52,
+        "protein": 11,
+        "carbohydrates": 0.7,
+        "fat": 0.2
+      },
+      "storage": "Keep refrigerated. Use within 1-2 weeks of separating from yolk.",
+      "seasonality": []
+    },
+    {
+      "name": "Egg Yolk",
+      "slug": "egg-yolk",
+      "alternateNames": ["Egg Yolks", "Yolk"],
+      "image": "https://example.com/images/egg-yolk.jpg",
+      "category": "dairy",
+      "parentIngredient": "Egg",
+      "isGeneric": false,
+      "defaultUnit": "g",
+      "validUnits": ["g", "unit"], 
+      "nutritionPer100g": {
+        "calories": 322,
+        "protein": 16,
+        "carbohydrates": 3.6,
+        "fat": 27
+      },
+      "storage": "Keep refrigerated, covered in water. Use within 2-4 days of separating from white.",
+      "seasonality": []
+    },
+    {
+      "name": "Large Egg",
+      "slug": "large-egg",
+      "alternateNames": ["Large Eggs"],
+      "image": "https://example.com/images/large-egg.jpg",
+      "category": "dairy",
+      "parentIngredient": "Egg",
+      "isGeneric": false,
+      "defaultUnit": "unit",
+      "validUnits": ["unit", "g"],
+      "nutritionPer100g": {
+        "calories": 143, 
+        "protein": 12.6,
+        "carbohydrates": 0.7,
+        "fat": 9.5
+      },
+      "storage": "Keep refrigerated. Use within 3-5 weeks.",
+      "seasonality": []
+    },
+    {
+      "name": "Pasteurized Egg",
+      "slug": "pasteurized-egg",
+      "alternateNames": ["Pasteurized Eggs"],
+      "image": "https://example.com/images/pasteurized-egg.jpg",
+      "category": "dairy",
+      "parentIngredient": "Egg",
+      "isGeneric": false,
+      "defaultUnit": "unit",
+      "validUnits": ["unit", "g"],
+      "nutritionPer100g": {
+        "calories": 143,
+        "protein": 12.6,
+        "carbohydrates": 0.7,
+        "fat": 9.5
+      },
+      "storage": "Keep refrigerated. Follow package instructions for use.",
+      "seasonality": []
+    }
+  ]
+}
